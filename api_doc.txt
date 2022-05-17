@@ -1,0 +1,27 @@
+POST
+
+1. http://localhost:3000/get_product_list
+
+Request: {
+    "page_token": 1,
+    "search": ""
+}
+
+Response =>  {
+    "page_token": 1,
+    "result": [
+        {
+            "id": 2,
+            "product_name": "abcd",
+            "description": "Original USSR Russian Soviet Army Helmet SSh-",
+            "image": "http://s3_bucket/abc.png",
+            "rate": "5",
+            "price": 69.7,
+            "is_active": 1,
+            "is_deleted": 0,
+            "created_at": "1649427773",
+            "updated_at": "2022-05-17T10:56:51.000Z",
+            "date": "2022-04-08T14:22:53.000Z"
+        }
+    ]
+}

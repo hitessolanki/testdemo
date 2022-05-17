@@ -1,0 +1,13 @@
+CREATE TABLE `tbl_product` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `product_name` varchar(255) DEFAULT NULL,
+  `description` varchar(45) DEFAULT NULL,
+  `image` varchar(45) DEFAULT NULL,
+  `rate` varchar(45) DEFAULT NULL,
+  `price` decimal(10,2) DEFAULT 0.00,
+  `is_active` tinyint(1) DEFAULT 1,
+  `is_deleted` tinyint(1) DEFAULT 0,
+  `created_at` varchar(32) DEFAULT NULL,
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
